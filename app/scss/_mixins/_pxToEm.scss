@@ -1,0 +1,7 @@
+$base: 16;
+
+@function em($pixels, $context: $base) {
+    @return ($pixels / $context) * 1em;
+}
+
+

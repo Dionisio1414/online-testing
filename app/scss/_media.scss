@@ -1,0 +1,639 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+@include media-breakpoint-up(xl) {
+    .pos-line-for-cabinet .line-for-cabinet {
+        margin-left: 8%;
+        width: 92%;
+    }
+}
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+    .logo {
+        margin-right: 42%;    
+    }
+    
+    .language {
+        margin-left: 45%;
+    }
+    
+    .language-2 {
+        margin-left: 45%;
+    }
+    
+    .logout {
+        margin-left: 15%;
+    }
+    
+    // My cabinet
+    
+    .cabinet-block .user-view figure {
+        width: 100%;
+    }
+    
+    .cabinet-block .user-mnu {
+        width: 100%;
+    }
+    
+    .pos-line-for-cabinet {
+        padding-left: 0;
+    }
+    
+    .cabinet-block .user-form .change-form form input {
+        width: 300px;
+    }
+    
+    //preview 
+    
+    .preview-description .img-for-desc {
+        width: 18%;
+    }
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+    nav > ul li {
+        font-size: em(13);
+        padding-right: 15px;
+    }
+    
+    .logo a > img {
+        max-width: 90%;       
+    }
+    
+     .language {
+        margin-left: 45%;
+    }
+    
+    .language-2 {
+        margin-left: 45%;
+    }
+    
+    .main .slider .reg-form {
+        width: 100%;
+        margin: 0;
+    }
+    
+    // My Cabinet
+    
+    .cabinet-block {
+        width: 100%;
+    }
+    
+    .cabinet-block .user-view figure {
+        width: 100%;
+    }
+    
+    .cabinet-block .user-mnu {
+        width: 100%;
+    }
+    
+    .pos-line-for-cabinet {
+        padding-left: 0;
+    }
+    
+    .cabinet-block .user-form .change-form {
+        margin-left: 4%;
+    }
+    
+    .cabinet-block .user-form .change-form form button{
+        margin-left: 26%;    
+    }
+    
+    .cabinet-block .user-form .change-form form input {
+        width: 285px;
+    }
+    
+    // tests - page 
+    .col-tabs .tab-test {
+        width: 50%;
+    }
+    
+    .part-for-test .block-for-question .block-question {
+        padding: 3%;
+    }
+    
+    // preview 
+    
+    .preview-table {
+        width: 100%;
+    }
+    
+    .preview-description {
+        display: block;
+        padding-bottom: 17.5%;
+    }
+    
+    .preview-description p {
+        font-size: em(13);
+    }
+    
+    .preview-description .img-for-desc {
+        width: 15%;
+    }
+    
+    #preview_test .yet-tests {
+        margin-top: 0;
+        margin-bottom: 5%;
+    }
+    
+    // checkbox and radio button
+    
+    .part-for-test form p { 
+        margin-left: 5%; 
+    }
+    
+    .modal_form_reg {
+        width: 550px;
+    }
+    
+    .cookies p {
+        font-size: em(13);
+    }
+    
+    .cookies a.exit-cookie {
+        padding: 5px 7px;
+    }
+    
+    .cookies a:first-child {
+        font-size: em(12);
+        vertical-align: text-top;
+    }
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+    .logo {
+        margin-left: 15%;
+    }
+    
+    // Main menu
+    .menu-icon {
+        display: inline-block;
+    }
+    
+    nav {
+        background-color: $accent;
+        position: fixed;
+        display: none;
+        top: -9px; /* fix */
+        right: 0;
+        left: 0;
+        text-align: center;
+        margin-top: 119px;
+        height: 100%;
+    }
+    
+    nav ul {
+        white-space: normal;
+    }
+    
+    nav ul > li {
+        display: block;
+        font-size: em(16);
+        line-height: em(30);
+        padding-top: 20px;
+        border-bottom: 1px solid #fff;
+        &:first-child {
+            border-top: 1px solid #fff;
+        }
+        &:hover {
+            background-color: rgba(#3A0C9B,.3);
+        }
+    }
+    
+    nav > ul li a {
+        position: static;
+        &::before {
+            content: '';
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            background: #fff;
+            border-radius: 0;
+            &:hover {
+                animation: none initial initial none;
+            }
+        }
+        &:hover {
+            color: #fff;
+        }
+    }
+    // Submenu
+    
+    nav ul li.submenu > ul.accordion {
+        width: 100%;
+        &:before {
+            position: static;
+            left: 0;
+            top: 0;
+            content: "";
+            border-left: none;
+            border-right: none;
+            border-bottom: none; 
+        }
+        li {
+            font-size: em(14);
+        }
+    }
+    
+    nav ul li.submenu > a::after {
+        @include fa($fa-caret-down, #fff, 16px);
+    }
+    
+    .main .slider .reg-form {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .main .slider .reg-form input {
+        font-size: em(13);
+    }
+    
+    .main .slider .reg-form label {
+        font-size: em(16);
+    }
+    
+    .main .slider .info p {
+        font-size: em(12);
+        text-align: justify;
+        &:last-child {
+            text-align: center;
+        }
+    }
+    
+    .main .slider h1 {
+        font-size: em(20);
+    }
+    
+    .main .slider .info h2 {
+        font-size: em(18);
+        text-align: center;
+    }
+    
+    .main .slider .reg-form .reg-btn {
+        font-size: em(13);
+        letter-spacing: 1px;
+        padding: 12px 10px;
+    }
+    
+    // border for cabinet 
+    
+    .rigth-line-for-cabinet {
+        border-right: none;
+    }
+    
+    // My Cabinet
+    .cabinet-block {
+        padding: 0;
+    }
+    
+    .cabinet-block .user-view figure {
+        width: 65%;
+    }
+    
+    .cabinet-block .user-mnu {
+        padding-top: 150px;
+        width: 65%;
+    }
+    
+    .cabinet-block .container-for-li .icon-for-li {
+        width: 15%;
+    }
+    
+    .pos-line-for-cabinet {
+        margin-top: 1rem;
+    }
+    
+    .cabinet-block .user-form {
+        border-top: 1px solid rgba($accent,.5);
+        padding-top: 5%;
+    }
+    
+    .cabinet-block .user-form .change-form form input {
+        width: 100%;
+    }
+    
+    .cabinet-block .user-form .change-form form button {
+        margin-bottom: 8%;
+    }
+    
+    .cabinet-block .user-mnu ul.tabs {
+        margin-top: 10%;
+    }
+    
+    .cabinet-block .user-form .change-form {
+        margin-top: 4%;
+    }
+    
+    .cabinet-block .user-form .change-form .container-for-input {
+        margin-left: 7%;
+    }
+    
+    .cabinet-block .user-form .change-form form button {
+        margin-left: 36%;
+    }
+    
+    .list-subject {
+        padding-bottom: 5%;
+        ul {
+            margin-left: 30%;
+        }
+    }
+    
+    .main h1 {
+        font-size: em(20);
+    }
+    
+    footer .copyright {
+        font-size: em(12);
+    }
+    
+    // tests - page 
+    
+    .col-tabs {
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        overflow: auto;
+        .tab-test {
+            font-size: em(10);
+            width: 35%;
+            margin-right: 2%;
+        }
+    }
+    
+    .part-for-test .block-time-test {
+        font-size: em(16);
+    }
+    
+    .part-for-test .block-for-question p {
+        font-size: em(16);
+    }
+    
+    .part-for-test form button {
+        float: none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-40%);
+        font-size: em(16);
+        padding: 2px 30px;
+        margin-top: 3%;
+    }
+    
+    // page-tests
+    
+    .block-test {
+        height: auto;
+        h2 {
+            font-size: em(16);
+        }
+        p {
+            font-size: em(14);
+        }
+    }
+    
+    .test-select {
+        justify-content: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        select {
+            font-size: em(12);
+        }
+    }
+    
+    // test cards
+    
+    .yet-tests {
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .yet-tests .level-container p {
+        font-size: em(12);
+    }
+    
+    .yet-tests .description-container {
+        font-size: em(14);
+    }
+    
+    .yet-tests a.yet-test-link {
+        font-size: em(13);
+        &:after {
+            @include fa($fa-caret-right, $accent, 14px);
+        }
+    }
+    
+    #preview_test .yet-tests {
+        margin-top: 0;
+        margin-bottom: 5%;
+    }
+    // preview
+    
+    .preview-table {
+        float: none;
+        width: 85%;
+        margin: 0 auto;
+        margin-bottom: 5%;
+    }
+    
+    button.preview-btn-yet {
+        display: block;
+        width: 85%;
+        margin: 0 auto;
+        margin-bottom: 3%;
+    }
+    
+    .preview-description {
+        position: absolute;
+        left: 7%;
+        display: none;
+        width: 85%;
+        margin: 0 auto;
+        z-index: 10;
+    }
+    
+    .preview-table figure img {
+        max-width: 35%;
+    }
+    
+    // table of general results
+    
+    .table-results table {
+        font-size: em(16);
+    }
+    
+    .modal_form_reg {
+        left: 36%;
+        width: 500px;
+    }
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+    //header
+    
+    header {
+        padding: 0 2% 0 2%;
+    }
+    
+    .language {
+        font-size: em(10);
+    }
+    
+    .language-2 {
+        font-size: em(10);
+    }
+    
+    .logo {
+        padding-top: 16%;
+    }
+    
+    .menu-icon {
+        left: 38%;
+    }
+    
+    .logo a>img {
+        max-width: 75%;
+    }
+    
+    .logout {
+        margin-left: 5%;
+    }
+    
+    .logout p:last-child a {
+        font-size: em(14);
+    }
+    
+    .language-2 {
+        margin-left: 17%;
+    }
+    
+    nav ul>li {
+        font-size: em(12);    
+    }
+    
+    .main .slider h1:after, .main .slider h1:before {
+        width: 50px;
+    }
+    
+    .main .slider .info h2 {
+        font-size: em(16);
+        text-align: center!important;
+    }
+    
+    .main .slider .info p:last-child {
+        font-size: em(12);
+    }
+    
+    .main .slider .info p {
+        font-size: em(10);
+        text-align: justify;
+    }
+    //reg-form
+    .main .slider h1 {
+        font-size: em(15);
+    }
+    
+    .main .slider .reg-form label {
+        font-size: em(14);
+    }
+    
+    .main .slider .reg-form input {
+        width: 300px;
+    }
+    
+    .validBlock,
+    .invalidBlock {
+        width: 300px;
+    }
+    
+    .main .slider .reg-form .reg-btn {
+        font-size: em(12);
+    }
+    
+    
+    // my cabinet 
+    #cabinet h1 {
+        font-size: em(14);
+    }
+    
+    
+    .cabinet-block .user-form .change-form form input {
+        width: 100%;
+    }
+    
+    .cabinet-block .user-form .change-form .container-for-input {
+        width: 285px;
+        margin-left: 10%;
+    }
+    
+    .cabinet-block .user-form .change-form form button {
+        font-size: em(10);
+        margin-left: 35%;
+    }
+    
+    .cabinet-block .container-for-li .icon-for-li {
+        width: 17%;
+    }
+    
+    .cabinet-block .container-for-li a {
+        font-size: em(11);
+    }
+    
+    .main h1:after, .main h1:before {
+        width: 50px;
+    }
+    
+    //preloader 
+    .preloader .pre-img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .list-subject ul {
+        font-size: em(14);
+        margin-left: 22%;
+    }
+    
+    // table of general results
+    .table-results table {
+        font-size: em(12);
+    }
+    
+    .modal_form_reg {
+        left: 40%;
+        width: 400px;
+        p {
+            font-size: em(15);
+            margin-top: 19%;     
+        }
+    }
+    
+    //footer 
+    footer .copyright {
+        font-size: em(10);
+    }
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+}
